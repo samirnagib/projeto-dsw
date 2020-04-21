@@ -1,0 +1,71 @@
+
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#cadastro label{
+  margin-right: 7px;
+}
+
+#container{
+  padding: 5px;
+  grid-template-areas: "h"
+  "c"
+  "f";
+  grid-template-rows: 11vh 75vh 10vh;
+}
+
+.grid-container{
+  display: grid;
+}
+
+#cadastro{
+  grid-template-areas: "area1"
+  "area2"
+  "area3"
+  "area4"
+  "area5";
+  row-gap: 15px;
+}
+
+#header{
+  padding-left: 20px;
+  justify-content: start;
+  align-content: center;
+  grid-area: h;
+}
+
+#main{
+  padding: 20px;
+  grid-area:c;
+}
+
+section#basic-infos{
+  grid-area: area1;
+}
+
+section#contact{
+  grid-area: area2;
+}
+
+section#adress{
+  grid-area: area3;
+}
+
+#cadastro section div{
+  display: flex;
+  justify-content: start;
+  margin-bottom: 10px;
+}
+
+section div label{
+  line-height: 32px;
+  width: 100px;
+}
+
+#sex-choice input[type=radio] {
+  position: relative;
+  top: 7px;
+  margin-right: 5px;
+}

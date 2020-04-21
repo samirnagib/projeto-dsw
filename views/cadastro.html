@@ -1,0 +1,60 @@
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../css/style-cadastro.css">
+    <script src="../js/main.js"></script>
+    <title>Cadastro</title>
+  </head>
+
+  <body>
+    <div id="container" class="grid-container">
+
+      <div id="header" class="grid-container">
+        <h2>Cadastro de cliente</h2>
+      </div>
+
+      <div id="main">
+        <form action="" method="post" id="cadastro" class="grid-container">
+         <section id="basic-infos" class="grid-container">
+           <div>
+             <label for="nome">Nome:</label>
+             <input type="text" onkeyup="maiuscula(this);" name="nome" id="nome">
+           </div>
+
+          <div>
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" onkeyup="maiuscula(this);" name="sobrenome" id="sobrenome">
+          </div>
+
+          <div>
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" id="cpf">
+          </div>
+
+          <div>
+            <label for="dob">Nascimento:</label>
+            <input type="date" name="dob" id="dob">
+          </div>
+          
+          <div>
+            <label for="sex-choice">Sexo:</label>
+            <div id="sex-choice">
+              <input type="radio" name="sex" id="fem" value="F">
+              <label for="fem">Feminino</label>
+              <input type="radio" name="sex" id="masc" value="M">
+              <label for="masc">Masculino</label>
+          </div>
+
+         </section>   
+        </form>
+
+
+      </div>
+
+    </div>
+
+
+  </body>
+</html>

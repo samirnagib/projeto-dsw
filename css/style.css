@@ -1,0 +1,83 @@
+#container{
+  padding: 5px;
+
+
+  grid-template-areas: "area1"
+  "area2"
+  "area3";
+
+  grid-template-rows: 11vh 75vh 10vh;
+}
+
+.grid-container {
+  display: grid;
+}
+
+#container a{
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(21, 199, 154);
+  font-size: 15px;
+}
+
+#header{
+  padding: 5px 10px;
+  justify-content: end;
+}
+
+#main {
+  display: grid;
+  align-itens: center;
+  justify-items: center;
+}
+
+#login{
+  boder: solid 1px gray;
+  width: 300px;
+  height: 150px;
+  padding: 20px 20px 8px 20px;
+  row-gap: 3px;
+}
+
+#login div{
+  height: 35px;
+  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  text-align: left;
+
+  display: flex;
+  justify-content: center;
+}
+
+#login div label{
+  flex-grow: 1;
+  line-height: 32px;
+
+}
+
+#login div button{
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  outline: none;
+
+  background-color: rgb(21, 199, 154);
+  border-radius: 2px;
+  
+  cursor: pointer;
+  font-family: inherit;
+  color: white;
+  width: 70px;
+}
+
+  #footer{
+    /*background-color: blue;*/
+    padding: 10px;
+    align-content: center;
+    justify-content: center;
+  }
+
+}
